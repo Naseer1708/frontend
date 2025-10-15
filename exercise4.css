@@ -1,0 +1,16 @@
+body { margin:0; font-family:sans-serif; }
+.navbar {
+  position: fixed; top:0; left:0; width:100%;
+  background:#ff6f61; color:#fff;
+  display:flex; justify-content:space-between; padding:10px 20px;
+}
+.navbar ul { list-style:none; display:flex; gap:15px; margin:0; }
+.navbar a { color:#fff; text-decoration:none; }
+
+.slideshow { margin-top:60px; text-align:center; }
+.slideshow img { width:100%; display:none; }
+
+@media (max-width:600px) {
+  .navbar { flex-direction:column; align-items:center; }
+  .navbar ul { flex-direction:column; }
+}
